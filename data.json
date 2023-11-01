@@ -1,7 +1,4 @@
-// api/data.js
-
-// Simulated data
-const jsonData = {
+ {
     "Questions": [{
             "QuestionId": 1,
             "QuestionName": "တစ်ပတ်စာကံကြမ္မာ",
@@ -500,11 +497,3 @@ const jsonData = {
         }
     ]
 }
-
-export default (req, res) => {
-    if (req.method === 'GET') {
-        res.status(200).json(jsonData);
-    } else {
-        res.status(405).end(); // Method Not Allowed
-    }
-};
